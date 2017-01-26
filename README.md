@@ -26,10 +26,10 @@ The main goal is separate the whole project to smaller parts.
 
 4. Data models, structures - Why we choose structures over class? Caouse it's passed by values. We love values and don't like references. 
 
-### But we are not using it classical way!
-The core libraries in our projects are:
-  [RxSwift + RxCocoa]("https://github.com/ReactiveX/RxSwift"))
-  [RxDataSources]("https://github.com/RxSwiftCommunity/RxDataSources")
+### But we are not using it classical way!<br />
+> The core libraries in our projects are:<br />
+[RxSwift + RxCocoa]("https://github.com/ReactiveX/RxSwift")<br />
+[RxDataSources]("https://github.com/RxSwiftCommunity/RxDataSources")<br />
 
 This 3 libraries are easy to use but hard to master. Don't wory you **got us** and we will help you with every question you have, but if we don't you can add [Slack channel](https://rxswift.slack.com/messages). The community is great, especially in this slack channel where you obtain answer in 5 minutes.
 
@@ -38,13 +38,14 @@ First of all we have extensions for a lot of useful things in projects. Just use
 
 OBRAZOK
 
-#### ViewModel #####
-Is it same like ViewModel others MVVM concepts?**NO**
-Call your file like: *pre Controller name***ViewModel**
-This file consists of 3 main parts:
-1. protocol for events - 
-2. Structure called View Model
-3. function called like Structure but with first latter lowerCased
+#### ViewModel 
+ Is it same like ViewModel others MVVM concepts? **NO** <br />
+ Call your file like: "*pre Controller name*"**ViewModel** <br />
+
+This file consists of 3 main parts:<br />
+1. protocol for events<br />
+2. Structure called View Model<br />
+3. function called like Structure but with first latter lowerCased<br />
 
 ##### Protocol for events #####
 Event is action connected with some user interaction. For example: When click on login button -> pass me Username and password. Basically we are using PublishSubject for this. The main difference in subjects is amount of cached values.
